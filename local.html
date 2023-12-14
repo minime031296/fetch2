@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            background-color: bisque;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        table {
+            border:2px solid black;
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #1535d3;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.285);
+            color : blue;
+            text-align: center;
+            
+        }
+        #btn{
+            background-color: rgba(212, 0, 255, 0.74);
+            color:fffff
+        }
+        #btn2{
+            background-color:rgba(255, 0, 234, 0.74);
+            color:rgba(255, 196, 196, 0.815)
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input id="name" type="text" placeholder="Name">
+        <input id="age" type="number" placeholder="Age"><br>
+        <button id="btn" type="submit">Submit</button><br>
+    </form>
+
+    <button id="btn2" onclick="displayData()">Display Stored Data</button>
+
+    <table id="dataTable"></table>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
